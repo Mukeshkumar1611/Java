@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public
+class Number_Pattern_1
+{
+
+public
+    static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+        Scanner ms = new Scanner(System.in);
+        System.out.print("Enter Number of Rows: ");
+        int n = ms.nextInt();
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = i + 1; j <= (i * 2) + 1; j++)
+            {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
