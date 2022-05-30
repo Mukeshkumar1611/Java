@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Sum_of_Even_Numbers_till_N {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner mk = new Scanner(System.in);
+		System.out.print("Enter n: ");
+		int n = mk.nextInt();
+		int sum_till_n = 0;
+		for(int i=0;i<=n;i++) {
+			if(i % 2 == 0) {
+				sum_till_n += i;
+			}
+		}
+		System.out.println("Sum of even numbers till " + n + " is " + sum_till_n);
+	}
+
+}
