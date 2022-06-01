@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class InterestingAlphbets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ms = new Scanner(System.in);
+		System.out.print("Enter Rows: ");
+		int n = ms.nextInt();
+		for(int i=n;i>=1;i--) {
+			int temp = 64;
+			for(int j = n; j>=i; j--) {
+				System.out.print((char )(i + temp));
+				temp++;
+			}
+			System.out.println();
+		}
+
+	}
+
+}
