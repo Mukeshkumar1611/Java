@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class find_smallest {
+
+	public static void main(String[] args) {
+		Scanner mk = new Scanner(System.in);
+		System.out.print("Enter Size Of Array: ");
+		int n = mk.nextInt();
+		int[] arr = new int[n];
+		System.out.print("Enter Elements: ");
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = mk.nextInt();
+		}
+		
+		
+		int smallest = arr[0];
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] < smallest) {
+				smallest = arr[i];
+			}
+		}
+		System.out.print("Smallest Element in Array is : " + smallest);
+		
+	}
+
+}
