@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class find_largest {
+
+	public static void main(String[] args) {
+		Scanner mk = new Scanner(System.in);
+		System.out.print("Enter Size Of Array: ");
+		int n = mk.nextInt();
+		int[] arr = new int[n];
+		System.out.print("Enter Elements: ");
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = mk.nextInt();
+		}
+		
+		
+		int largest = arr[0];
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] > largest) {
+				largest = arr[i];
+			}
+		}
+		System.out.print("Largest Element in Array is : " + largest);
+		
+	}
+
+}
